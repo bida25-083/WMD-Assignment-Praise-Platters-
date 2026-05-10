@@ -4,106 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vm2Gv4xn+sjcB5Pcdsct8gbF8ZQ6hE+HtW1L/3iY3zQkFIfQfbdqUR7t0Aqy6Y4f" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS-Styles/menu.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/PRAISEPLATERS-LOGO.png">
+    <header class="py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-4 shadow-sm px-3">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/PRAISEPLATERS-LOGO.png" alt="Praise-Platters" width="56" height="56" class="rounded-circle border border-light border-2 bg-white">
+                    <div>
+                        <span class="fs-5 fw-bold">Praise-Platters</span>
+                        <div class="small text-muted">Good Food, Great Moments</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservations.html">Reservations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                        <li class="nav-item"><a class="nav-link active btn btn-warning btn-sm text-dark ms-2" href="menu.html">Menu</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <h2>Praise-Platters</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="reservations.html">Bookings</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="menu.html">Menu</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section class="section-1">
-            <h1>Salads</h1>
-        
-            <img src="images/beans salad.jpg">
-            <p>Bean Salad</p>
-            <p>P28.90</p>
+    <main class="py-5">
+        <div class="container">
+            <div class="mb-5">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+                    <h1 class="h2 text-warning text-uppercase mb-0">Salads</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/beans salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Bean Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Bean Salad</h3>
+                                <p class="mb-0 fw-semibold">P28.90</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/beetroot salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Beetroot Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Beetroot Salad</h3>
+                                <p class="mb-0 fw-semibold">P24.50</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/cabbage salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Coleslaw Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Coleslaw Salad</h3>
+                                <p class="mb-0 fw-semibold">P12.65</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/chakalaka salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Chakalaka Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Chakalaka Salad</h3>
+                                <p class="mb-0 fw-semibold">P18.05</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/fruit salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Fruit Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Fruit Salad</h3>
+                                <p class="mb-0 fw-semibold">P30.10</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/green salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Green Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Green Salad</h3>
+                                <p class="mb-0 fw-semibold">P20.15</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/pumpkin salad.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Pumpkin Salad" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Pumpkin Salad</h3>
+                                <p class="mb-0 fw-semibold">P14.50</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-            <img src="images/beetroot salad.jpg">
-            <p>Beetroot Salad</p>
-            <p>P24.50</p>
-
-            <img src="images/cabbage salad.jpg">
-            <p>Coleslaw Salad</p>
-            <p>P12.65</p>
-
-            <img src="images/chakalaka salad.jpg">
-            <p>Chakalaka Salad</p>
-            <p>P18.05</p>
-
-            <img src="images/fruit salad.jpg">
-            <p>Fruit Salad</p>
-            <p>P30.10</p>
-
-            <img src="images/green salad.jpg">
-            <p>Green Salad</p>
-            <p>P20.15</p>
-
-            <img src="images/pumpkin salad.jpg">
-            <p>Pumpkin Salad</p>
-            <p>P14.50</p>
-        </section>
-
-        <section class="section-2">
-            <h1>Smoothies</h1>
-
-            <img src="images/apple smoothie.jpg">
-            <p>Apple Smoothie</p>
-            <p>P32.89</p>
-
-            <img src="images/banana smothie.jpg">
-            <p>Banana Smoothie</p>
-            <p>P27.80</p>
-
-            <img src="images/granadilla smoothie.jpg">
-            <p>Granadilla Smoothie</p>
-            <p>P53.76</p>
-
-            <img src="images/mango smoothie.jpg">
-            <p>Mango Smoothie</p>
-            <p>P16.55</p>
-
-            <img src="images/peach smoothie.jpg">
-            <p>Peach Smoothie</p>
-            <p>P14.89</p>
-
-            <img src="images/pineapple smoothie.jpg">
-            <p>Pineapple Smoothie</p>
-            <p>P67.98</p>
-
-            <img src="images/srawberry smothie.jpg">
-            <p>Strawberry Smoothie</p>
-            <p>P34.56</p>
-
-        </section>
+            <div>
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+                    <h1 class="h2 text-warning text-uppercase mb-0">Smoothies</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/apple smoothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Apple Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Apple Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P32.89</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/banana smothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Banana Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Banana Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P27.80</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/granadilla smoothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Granadilla Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Granadilla Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P53.76</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/mango smoothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Mango Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Mango Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P16.55</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/peach smoothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Peach Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Peach Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P14.89</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/pineapple smoothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Pineapple Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Pineapple Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P67.98</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card h-100 bg-dark border-0 shadow-sm text-center text-light">
+                            <img src="images/srawberry smothie.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Strawberry Smoothie" style="width: 180px; height: 180px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="h5 text-warning">Strawberry Smoothie</h3>
+                                <p class="mb-0 fw-semibold">P34.56</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <img src="images/whatsapp.png">
-        <h3>WhatsApp</h3>
-        <h3>78372650</h3>
-
-        <img src="images/facebook.png">
-        <h3>Facebok</h3>
-        <h3>praiseplatters_res</h3>
-
-        <img src="images/instagram.png">
-        <h3>Instagram</h3>
-        <h3>praise-platters</h3>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="d-flex align-items-center gap-3 p-3 rounded-4 bg-secondary bg-opacity-10 border border-secondary border-opacity-10">
+                        <img src="images/whatsapp.png" alt="WhatsApp" width="48" height="48">
+                        <div>
+                            <h3 class="h6 mb-1">WhatsApp</h3>
+                            <p class="mb-0 text-muted">78372650</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="d-flex align-items-center gap-3 p-3 rounded-4 bg-secondary bg-opacity-10 border border-secondary border-opacity-10">
+                        <img src="images/facebook.png" alt="Facebook" width="48" height="48">
+                        <div>
+                            <h3 class="h6 mb-1">Facebook</h3>
+                            <p class="mb-0 text-muted">praiseplatters_res</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="d-flex align-items-center gap-3 p-3 rounded-4 bg-secondary bg-opacity-10 border border-secondary border-opacity-10">
+                        <img src="images/instagram.png" alt="Instagram" width="48" height="48">
+                        <div>
+                            <h3 class="h6 mb-1">Instagram</h3>
+                            <p class="mb-0 text-muted">praise-platters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end text-warning fst-italic mt-4">Thank you for choosing Praise-Platters.</div>
+        </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qLFgeAro2tgSKPo39l3H0WQ/EpE0ujXmWlUgXo/BKXX1R0LpZwr2xHv4p5XYB+hu" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -26,10 +26,10 @@ button {
 
 /* ===== HEADER ===== */
 header {
+    display: flex;
     max-width: 1280px;
     margin: 24px auto 0;
     padding: 16px 32px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
