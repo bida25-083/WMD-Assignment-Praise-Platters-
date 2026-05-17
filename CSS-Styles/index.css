@@ -180,21 +180,19 @@ header nav li:last-child a:hover {
     margin-bottom: 30px;
 }
 
-.primary-btn,
-.secondary-btn {
-    border-radius: 999px;
-    padding: 14px 32px;
-    font-weight: 700;
-    font-size: 0.98rem;
-    letter-spacing: 0.06em;
-    transition: all 0.3s ease;
-}
 
 .primary-btn {
     background: linear-gradient(135deg, #ff7f24 0%, #ffad4b 100%);
     color: #fff;
     border: none;
     box-shadow: 0 10px 22px rgba(255, 129, 39, 0.24);
+    border-radius: 999px;
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    letter-spacing: 0.06em;
+    transition: all 0.3s ease;
+    margin-left: 180px;
 }
 
 .primary-btn:hover {
@@ -317,6 +315,7 @@ header nav li:last-child a:hover {
     font-size: clamp(2.1rem, 3vw, 2.8rem);
     letter-spacing: 0.02em;
     margin: 0;
+    margin-left: 400px;
 }
 
 .services-grid {
@@ -383,6 +382,30 @@ header nav li:last-child a:hover {
     transform: translateX(4px);
 }
 
+.Ordering {
+    border: black 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Delivery {
+    border: black 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Catering {
+    border: black 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Reservation {
+    border: black 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 /* ===== FOOTER ===== */
 footer {
     max-width: 1280px;
@@ -399,13 +422,14 @@ footer {
 
 .social-item {
     display: flex;
-    gap: 18px;
+    gap: 10px;
     align-items: center;
     padding: 18px 22px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    
+    margin-left: 150px;
+    width: fit-content;  
 }
 
 .social-item img {
@@ -419,16 +443,6 @@ footer {
     line-height: 1.1;
 }
 
-.social-item h3:first-of-type {
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.social-item h3:last-child {
-    font-size: 0.95rem;
-    font-weight: 500;
-    opacity: 0.9;
-}
 
 footer::after {
     content: "Thank you for choosing Praise-Platters.";

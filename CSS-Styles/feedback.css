@@ -277,7 +277,7 @@ footer {
 }
 
 footer::after {
-    content: "Thank you for choosing Praise-Platters.";
+    content: "Thank you for choosing";
     grid-column: 1 / -1;
     justify-self: end;
     color: #ffb26f;
